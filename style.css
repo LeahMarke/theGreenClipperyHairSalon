@@ -7,6 +7,25 @@ body {
   width: 100vw;
   height: 100vh;
 }
+/*start scroll bar*/
+/* .scroller {
+  width: 50px;
+  height: 100px;
+  overflow-y: scroll;
+  scrollbar-color: grey;
+} */
+html::-webkit-scrollbar {
+  color: red;
+  width: 40px;
+}
+html::-webkit-scrollbar-track {
+  background: pink;
+}
+html::-webkit-scrollbar-thumb {
+  background: purple;
+}
+
+/*end scroll bar*/
 header {
   min-height: 15%;
   display: flex;
