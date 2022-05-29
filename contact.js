@@ -11,7 +11,7 @@ document.querySelectorAll(".nav-link").forEach((n) =>
   })
 );
 
-/*start js for form*/
+/*start js for form copied and not edited yet*/
 const placeForResults = document.getElementById("results");
 
 new URLSearchParams(window.location.search).forEach((value, name) => {
