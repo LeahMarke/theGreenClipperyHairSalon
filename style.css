@@ -6,25 +6,7 @@
 body {
   width: 100vw;
 }
-/*start scroll bar*/
-/* .scroller {
-  width: 50px;
-  height: 100px;
-  overflow-y: scroll;
-  scrollbar-color: grey;
-} */
-html::-webkit-scrollbar {
-  color: red;
-  width: 40px;
-}
-html::-webkit-scrollbar-track {
-  background: pink;
-}
-html::-webkit-scrollbar-thumb {
-  background: purple;
-}
 
-/*end scroll bar*/
 header {
   min-height: 15%;
   display: flex;
@@ -45,6 +27,15 @@ li {
   display: block;
   margin-bottom: 20px;
 }
+.hamburger.active .bar:nth-child(2) {
+  opacity: 0;
+}
+.hamburger.active .bar:nth-child(1) {
+  transform: translateY(8px) rotate(45deg);
+}
+.hamburger.active .bar:nth-child(3) {
+  transform: translateY(-8px) rotate(-45deg);
+}
 .bar {
   display: block;
   width: 50px;
@@ -56,9 +47,10 @@ li {
 }
 
 .nav-menu {
-  position: fixed;
+  /* position: fixed;
   left: -100%;
-  top: 70px;
+  top: 70px; */
+  display: none;
   gap: 0;
   flex-direction: column;
   background-color: azure;
@@ -73,8 +65,10 @@ li {
   margin: 16px 0;
 }
 .nav-menu.active {
-  left: 0;
+  display: flex;
+  flex-direction: column;
 }
+
 /*start footer styling*/
 footer {
   height: 12%;
@@ -129,35 +123,41 @@ footer {
 /*start media query for tablet*/
 @media (min-width: 576px) {
 }
-
 @media (min-width: 768px) {
+  .hamburger {
+    display: none;
+    cursor: pointer;
+  }
+
   .navbar {
     min-height: 70px;
     display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
     padding: 0 24px;
   }
   .nav-menu {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: space-around;
     align-items: center;
-    /* gap: 20px; */
+    gap: 20px;
+    left: 0;
   }
+
   .nav-link {
-    transition: 0.7s ease;
+    /* transition: 0.7s ease; */
     color: green;
     text-decoration: none;
   }
   .nav-link:hover {
     color: pink;
   }
-  .hamburger {
-    display: none;
-    cursor: pointer;
+
+  /* li {
+    display: block;
   }
+  .nav-menu.active {
+    left: 0;
+  } */
 }
 @media (min-width: 992px) {
 }
