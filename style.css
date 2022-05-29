@@ -17,7 +17,8 @@ header {
 }
 h1 {
   color: olivedrab;
-  padding: 15px;
+  padding: 10px;
+  font-size: 40px;
 }
 li {
   list-style: none;
