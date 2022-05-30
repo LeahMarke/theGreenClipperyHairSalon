@@ -15,7 +15,8 @@
   --bright-green: #a7c957;
   --olive-green: #6b8e23;
   --charcoal: #808080;
-} /*mobile first*/
+}
+/*mobile first*/
 body {
   width: 100vw;
   font-family: "Advent Pro", sans-serif;
@@ -25,11 +26,6 @@ body {
   font-family: "Nanum Gothic", sans-serif;
   font-family: "Radio Canada", sans-serif;
   font-family: "Titillium Web", sans-serif;
-}
-button {
-  background-color: var(--wintergreen-dream);
-  border: none;
-  padding: 5px 5px;
 }
 h1 {
   color: var(--olive-green);
@@ -49,6 +45,7 @@ header {
 li {
   list-style: none;
 }
+
 /*start hamburger menu  */
 .bar {
   display: block;
@@ -86,21 +83,53 @@ li {
   color: var(--azure-x-11-web-color);
   text-decoration: none;
   padding: 5px;
-  /* width: 100%; */
 }
 
-/* .home-link {
-  background-color: gray;
-} */
 /*end navbar menu  */
-.main_paragraph_pic {
+main {
   background-image: url(./images/brunetteWithLeafMain.png);
-  background-color: rgba(142, 221, 122, 0.419);
-  height: 200px;
+  background-color: var(--wintergreen-dream);
+  /* height: 200px; */
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  z-index: -1;
+  /* z-index: -1; */
+}
+main {
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+h2 {
+  margin-top: 5px;
+  font-size: 14px;
+  background-color: var(--mint-cream);
+  max-width: 45%;
+}
+main > p {
+  font-size: 14px;
+  background-color: var(--charcoal);
+}
+.one {
+  max-width: 42%;
+}
+.two {
+  max-width: 65%;
+}
+.three {
+  max-width: 75%;
+}
+.four {
+  max-width: 48%;
+}
+button {
+  font-size: 14px;
+  background-color: var(--wintergreen-dream);
+  border: none;
+  padding: 5px 0;
+  max-width: 150px;
+  margin-bottom: 5px;
 }
 /*start footer styling*/
 footer {
@@ -181,6 +210,10 @@ footer {
   }
   .active-link {
     background: gray;
+  }
+  main {
+    /* height: 200px; */
+    z-index: -1;
   }
 }
 /*start media query for tablet*/
