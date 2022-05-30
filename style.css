@@ -27,6 +27,9 @@ body {
   font-family: "Radio Canada", sans-serif;
   font-family: "Titillium Web", sans-serif;
 }
+.scissors-logo {
+  margin-top: 10px;
+}
 h1 {
   color: var(--wintergreen-dream);
   padding: 10px;
@@ -107,14 +110,16 @@ h2 {
   background-color: var(--mint-cream);
   max-width: 45%;
   margin-left: 5px;
-  text-align: center;
+  text-align: left;
+  padding-left: 6px;
   color: var(--black-coral);
 }
 main > p {
   font-size: 14px;
   background-color: var(--charcoal);
   margin-left: 5px;
-  text-align: center;
+  text-align: left;
+  padding-left: 6px;
   color: var(--mint-cream);
 }
 /* .one {
@@ -213,7 +218,7 @@ footer {
   gap: 5px;
 }
 /*end social media icons*/
-@media (max-width: 762px) {
+@media (max-width: 575px) {
   .nav-menu {
     position: fixed;
     top: 31%;
@@ -248,9 +253,19 @@ footer {
   }
 }
 /*start media query for tablet*/
+
 @media (min-width: 576px) {
-}
-@media (min-width: 763px) {
+  .scissors-logo {
+    width: 300px;
+    height: 150px;
+    margin-top: 15px;
+  }
+
+  h1 {
+    padding: 20px;
+    font-size: 50px;
+  }
+
   .hamburger {
     display: none;
     cursor: pointer;
@@ -275,6 +290,59 @@ footer {
     justify-content: space-around;
     align-items: center;
     gap: 20px;
+  }
+
+  h2 {
+    font-size: 18px;
+    max-width: 38%;
+    margin-left: 8px;
+  }
+  main > p {
+    font-size: 18px;
+    margin-left: 8px;
+  }
+
+  .two {
+    max-width: 48%;
+  }
+  .three {
+    max-width: 62%;
+  }
+  .four {
+    max-width: 40%;
+  }
+  button {
+    font-size: 14px;
+    margin-left: 8px;
+  }
+
+  section {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr 0.5fr;
+    justify-items: center;
+    gap: 0;
+  }
+  section > p {
+    font-size: 14px;
+  }
+  .image-links {
+    width: 160px;
+  }
+  .hipster-paragraph {
+    grid-column: 2/3;
+    grid-row: 2/3;
+  }
+  .jean-jacket-image {
+    grid-column: 2/3;
+    grid-row: 1/2;
+  }
+
+  .image-links {
+    border: 3px solid var(--charcoal);
+  }
+  footer {
+    margin-top: 0;
   }
 }
 @media (min-width: 992px) {
