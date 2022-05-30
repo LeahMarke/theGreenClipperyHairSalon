@@ -83,6 +83,7 @@ li {
   color: var(--azure-x-11-web-color);
   text-decoration: none;
   padding: 5px;
+  font-size: 18px;
 }
 
 /*end navbar menu  */
@@ -151,22 +152,23 @@ section {
 }
 section > p {
   font-size: 20px;
+  text-transform: uppercase;
   font-weight: bold;
-  color: var(--black-coral);
+  color: var(--wintergreen-dream);
 }
 /*start footer styling*/
 footer {
   height: 12%;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
   align-items: center;
-  background-color: gray;
-  margin-top: 25px;
+  background-color: var(--charcoal);
+  margin-top: 40px;
+  padding: 20px 0;
 }
 .all-rights-reserved {
-  font-size: 14px;
-  color: darkgray;
+  font-size: 16px;
+  color: var(--azure-x-11-web-color);
 }
 /* START Style for "font awesome" social media icons */
 .fa {
@@ -175,7 +177,7 @@ footer {
   width: 38px;
   text-align: center;
   text-decoration: none;
-  border: 3px solid darkolivegreen;
+  border: 3px solid var(--wintergreen-dream);
 }
 
 .fa:hover {
@@ -220,8 +222,8 @@ footer {
     transition: 0.3s;
   }
   .nav-item {
-    background-color: rgba(142, 221, 122, 0.95);
-    border: 1px solid azure;
+    background-color: var(--wintergreen-dream);
+    border: 1px solid var(--azure-x-11-web-color);
     width: 100%;
     padding: 0.8em;
   }
@@ -233,7 +235,7 @@ footer {
     z-index: 1;
   }
   .active-link {
-    background: gray;
+    background: var(--charcoal);
   }
   main {
     /* height: 200px; */
@@ -257,11 +259,8 @@ footer {
 
   .nav-link {
     /* transition: 0.7s ease; */
-    color: olivedrab;
+    color: var(--wintergreen-dream);
     text-decoration: none;
-  }
-  .nav-link:hover {
-    color: pink;
   }
 
   .nav-menu {
