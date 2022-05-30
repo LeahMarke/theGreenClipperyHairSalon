@@ -3,12 +3,21 @@
   padding: 0;
   box-sizing: border-box;
 }
-/*mobile first*/
+/*color pallette*/
+:root {
+  --wintergreen-dream: #6b9080ff;
+  --cambridge-blue: #a4c3b2ff;
+  --light-cyan: #cce3deff;
+  --azure-x-11-web-color: #eaf4f4ff;
+  --mint-cream: #f6fff8ff;
+  --black-coral: #4c5760ff;
+  --pewter-blue: #93a8acff;
+} /*mobile first*/
 body {
   width: 100vw;
 }
 button {
-  background-color: rgb(158, 233, 220);
+  background-color: var(--prussian-blue);
   border: none;
   padding: 5px 5px;
 }
@@ -66,37 +75,41 @@ li {
 .nav-link {
   color: azure;
   text-decoration: none;
-  background-color: rgba(142, 221, 122, 0.419);
   padding: 5px;
-  border: 2px solid azure;
   /* width: 100%; */
 }
 .nav-menu {
-  /* position: fixed;
-  left: -100%;
-  top: 70px; */
+  position: fixed;
+  top: 31%;
+  left: 50%;
+  transform: translateX(-50%);
   display: none;
   gap: 0;
   flex-direction: column;
-  background-color: azure;
   width: 100%;
   text-align: center;
   transition: 0.3s;
 }
 .nav-item {
-  margin: 16px 0;
+  background-color: rgba(142, 221, 122, 0.95);
+  border: 1px solid azure;
+  width: 100%;
+  padding: 0.8em;
 }
 .nav-menu.active {
   display: flex;
   flex-direction: column;
-  background-color: rgb(158, 233, 220);
+  /* background-color: rgb(158, 233, 220); */
   width: 90%;
   align-items: stretch;
+  z-index: 1;
 }
-
-.home-link {
+.active-link {
+  background: gray;
+}
+/* .home-link {
   background-color: gray;
-}
+} */
 /*end navbar menu  */
 .main_paragraph_pic {
   background-image: url(./images/brunetteWithLeafMain.png);
@@ -105,6 +118,7 @@ li {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  z-index: -1;
 }
 /*start footer styling*/
 footer {
@@ -160,12 +174,14 @@ footer {
 /*start media query for tablet*/
 @media (min-width: 576px) {
 }
-@media (min-width: 768px) {
+@media (min-width: 763px) {
   .hamburger {
     display: none;
     cursor: pointer;
   }
-
+  .nav-menu {
+    position: static;
+  }
   .navbar {
     min-height: 70px;
     display: flex;
@@ -182,13 +198,15 @@ footer {
 
   .nav-link {
     /* transition: 0.7s ease; */
-    color: green;
+    color: olivedrab;
     text-decoration: none;
   }
   .nav-link:hover {
     color: pink;
   }
-
+  .home-link {
+    background-color: rgba(142, 221, 122, 0.419);
+  }
   /* li {
     display: block;
   }
