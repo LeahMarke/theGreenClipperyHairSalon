@@ -27,8 +27,11 @@ body {
   font-family: "Radio Canada", sans-serif;
   font-family: "Titillium Web", sans-serif;
 }
+.scissors-logo {
+  margin-top: 10px;
+}
 h1 {
-  color: var(--olive-green);
+  color: var(--wintergreen-dream);
   padding: 10px;
   font-size: 40px;
 }
@@ -83,6 +86,7 @@ li {
   color: var(--azure-x-11-web-color);
   text-decoration: none;
   padding: 5px;
+  font-size: 18px;
 }
 
 /*end navbar menu  */
@@ -94,12 +98,11 @@ main {
   background-repeat: no-repeat;
   background-size: cover;
   /* z-index: -1; */
-}
-main {
   height: 300px;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  margin-bottom: 15px;
 }
 h2 {
   margin-top: 5px;
@@ -107,13 +110,17 @@ h2 {
   background-color: var(--mint-cream);
   max-width: 45%;
   margin-left: 5px;
-  text-align: center;
+  text-align: left;
+  padding-left: 6px;
+  color: var(--black-coral);
 }
 main > p {
   font-size: 14px;
   background-color: var(--charcoal);
   margin-left: 5px;
-  text-align: center;
+  text-align: left;
+  padding-left: 6px;
+  color: var(--mint-cream);
 }
 /* .one {
   max-width: 42%;
@@ -135,28 +142,48 @@ button {
   max-width: 120px;
   margin-bottom: 5px;
   margin-left: 5px;
+  color: var(--black-coral);
+  font-weight: bold;
+}
+/*start 3 pics with captions*/
+.image-links {
+  border: 3px solid var(--charcoal);
+}
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+}
+section > p {
+  font-size: 20px;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: var(--wintergreen-dream);
 }
 /*start footer styling*/
 footer {
   height: 12%;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
   align-items: center;
-  background-color: gray;
+  background-color: var(--charcoal);
+  margin-top: 40px;
+  padding: 20px 0;
+  gap: 8px;
 }
 .all-rights-reserved {
-  font-size: 14px;
-  color: darkgray;
+  font-size: 16px;
+  color: var(--azure-x-11-web-color);
 }
 /* START Style for "font awesome" social media icons */
 .fa {
-  padding: 8px;
+  padding: 10px;
   font-size: 18px;
-  width: 38px;
+  width: 45px;
   text-align: center;
   text-decoration: none;
-  border: 3px solid darkolivegreen;
+  border: 3px solid var(--wintergreen-dream);
 }
 
 .fa:hover {
@@ -186,8 +213,12 @@ footer {
   background: #3f729b;
   color: white;
 }
+.social_media_links {
+  display: flex;
+  gap: 5px;
+}
 /*end social media icons*/
-@media (max-width: 762px) {
+@media (max-width: 575px) {
   .nav-menu {
     position: fixed;
     top: 31%;
@@ -201,8 +232,8 @@ footer {
     transition: 0.3s;
   }
   .nav-item {
-    background-color: rgba(142, 221, 122, 0.95);
-    border: 1px solid azure;
+    background-color: var(--wintergreen-dream);
+    border: 1px solid var(--azure-x-11-web-color);
     width: 100%;
     padding: 0.8em;
   }
@@ -214,7 +245,7 @@ footer {
     z-index: 1;
   }
   .active-link {
-    background: gray;
+    background: var(--charcoal);
   }
   main {
     /* height: 200px; */
@@ -222,9 +253,19 @@ footer {
   }
 }
 /*start media query for tablet*/
+
 @media (min-width: 576px) {
-}
-@media (min-width: 763px) {
+  .scissors-logo {
+    width: 300px;
+    height: 150px;
+    margin-top: 15px;
+  }
+
+  h1 {
+    padding: 20px;
+    font-size: 50px;
+  }
+
   .hamburger {
     display: none;
     cursor: pointer;
@@ -238,11 +279,8 @@ footer {
 
   .nav-link {
     /* transition: 0.7s ease; */
-    color: olivedrab;
+    color: var(--wintergreen-dream);
     text-decoration: none;
-  }
-  .nav-link:hover {
-    color: pink;
   }
 
   .nav-menu {
@@ -252,6 +290,59 @@ footer {
     justify-content: space-around;
     align-items: center;
     gap: 20px;
+  }
+
+  h2 {
+    font-size: 18px;
+    max-width: 38%;
+    margin-left: 8px;
+  }
+  main > p {
+    font-size: 18px;
+    margin-left: 8px;
+  }
+
+  .two {
+    max-width: 48%;
+  }
+  .three {
+    max-width: 62%;
+  }
+  .four {
+    max-width: 40%;
+  }
+  button {
+    font-size: 14px;
+    margin-left: 8px;
+  }
+
+  section {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr 0.5fr;
+    justify-items: center;
+    gap: 0;
+  }
+  section > p {
+    font-size: 14px;
+  }
+  .image-links {
+    width: 160px;
+  }
+  .hipster-paragraph {
+    grid-column: 2/3;
+    grid-row: 2/3;
+  }
+  .jean-jacket-image {
+    grid-column: 2/3;
+    grid-row: 1/2;
+  }
+
+  .image-links {
+    border: 3px solid var(--charcoal);
+  }
+  footer {
+    margin-top: 0;
   }
 }
 @media (min-width: 992px) {
