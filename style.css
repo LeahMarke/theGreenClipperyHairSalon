@@ -165,6 +165,7 @@ footer {
   background-color: var(--charcoal);
   margin-top: 40px;
   padding: 20px 0;
+  gap: 8px;
 }
 .all-rights-reserved {
   font-size: 16px;
@@ -172,9 +173,9 @@ footer {
 }
 /* START Style for "font awesome" social media icons */
 .fa {
-  padding: 8px;
+  padding: 10px;
   font-size: 18px;
-  width: 38px;
+  width: 45px;
   text-align: center;
   text-decoration: none;
   border: 3px solid var(--wintergreen-dream);
@@ -206,6 +207,10 @@ footer {
 .fa-instagram {
   background: #3f729b;
   color: white;
+}
+.social_media_links {
+  display: flex;
+  gap: 5px;
 }
 /*end social media icons*/
 @media (max-width: 762px) {
