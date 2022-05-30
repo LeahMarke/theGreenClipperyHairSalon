@@ -106,16 +106,20 @@ h2 {
   font-size: 14px;
   background-color: var(--mint-cream);
   max-width: 45%;
+  margin-left: 5px;
+  text-align: center;
 }
 main > p {
   font-size: 14px;
   background-color: var(--charcoal);
+  margin-left: 5px;
+  text-align: center;
 }
-.one {
+/* .one {
   max-width: 42%;
-}
+} */
 .two {
-  max-width: 65%;
+  max-width: 58%;
 }
 .three {
   max-width: 75%;
@@ -124,12 +128,13 @@ main > p {
   max-width: 48%;
 }
 button {
-  font-size: 14px;
+  font-size: 12px;
   background-color: var(--wintergreen-dream);
   border: none;
   padding: 5px 0;
-  max-width: 150px;
+  max-width: 120px;
   margin-bottom: 5px;
+  margin-left: 5px;
 }
 /*start footer styling*/
 footer {
