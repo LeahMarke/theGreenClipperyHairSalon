@@ -122,9 +122,7 @@ main > p {
   padding-left: 6px;
   color: var(--mint-cream);
 }
-/* .one {
-  max-width: 42%;
-} */
+
 .two {
   max-width: 58%;
 }
