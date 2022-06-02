@@ -98,7 +98,7 @@ main {
   flex-direction: column;
   align-items: center;
   margin: auto;
-  gap: 8px;
+  gap: 15px;
 }
 
 form {
@@ -106,35 +106,58 @@ form {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 8px;
+  gap: 15px;
 }
 h2 {
-  font-size: 18px;
+  width: 100%;
+  font-size: 20px;
   color: var(--mint-cream);
   border: 2px solid var(--black-coral);
   text-align: center;
   background-color: var(--charcoal);
-  margin-top: 8px;
+  margin-top: 15px;
 }
+
 .input-box {
-  font-size: 18px;
+  font-size: 20px;
   text-align: center;
   width: 100%;
   border: 2px solid var(--charcoal);
   background-color: var(--mint-cream);
 }
-
+#name {
+  text-align: center;
+  border: none;
+  font-size: 18px;
+}
+#address {
+  text-align: center;
+  border: none;
+  font-size: 18px;
+}
+#email {
+  text-align: center;
+  border: none;
+  font-size: 18px;
+}
+#phone-number {
+  text-align: center;
+  border: none;
+  font-size: 18px;
+}
+textarea {
+  font-size: 20px;
+  height: 300px;
+}
 button {
   font-size: 18px;
   background-color: var(--wintergreen-dream);
   border: none;
-  padding: 5px 10px;
-  max-width: 120px;
-  /* margin-bottom: 5px; */
-  /* display: inline-block; */
+  padding: 10px 10px;
+  width: 120px;
   color: var(--black-coral);
   font-weight: bold;
-  margin-bottom: 8px;
+  margin-bottom: 50px;
 }
 /*start 3 pics with captions*/
 
