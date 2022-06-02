@@ -287,7 +287,20 @@ footer {
     color: var(--wintergreen-dream);
     text-decoration: none;
   }
-
+  /* this is how I was trying to style the hover, etc. */
+  /* a.nav-link:link {
+    color: var(--wintergreen-dream);
+  }
+  .nav-link:visited {
+    color: var(--charcoal);
+  }
+  a.nav-link:hover {
+    font-size: larger;
+  }
+  .nav-link:active {
+    background-color: var(--charcoal);
+  } */
+  /* end trial for hover */
   .nav-menu {
     /* position: static; */
     display: flex;
