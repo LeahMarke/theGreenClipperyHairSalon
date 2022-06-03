@@ -1,0 +1,332 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/*color pallette*/
+:root {
+  --wintergreen-dream: #6b9080ff;
+  --cambridge-blue: #a4c3b2ff;
+  --light-cyan: #cce3deff;
+  --azure-x-11-web-color: #eaf4f4ff;
+  --mint-cream: #f6fff8ff;
+  --black-coral: #4c5760ff;
+  --pewter-blue: #829598;
+  --bright-green: #a7c957;
+  --olive-green: #6b8e23;
+  --charcoal: #808080;
+}
+/*mobile first*/
+body {
+  width: 100%;
+  margin: 0;
+  font-family: "Advent Pro", sans-serif;
+  font-family: "Blaka Hollow", cursive;
+  font-family: "Josefin Sans", sans-serif;
+  font-family: "M PLUS Rounded 1c", sans-serif;
+  font-family: "Nanum Gothic", sans-serif;
+  font-family: "Radio Canada", sans-serif;
+  font-family: "Titillium Web", sans-serif;
+}
+.scissors-logo {
+  margin-top: 10px;
+}
+h1 {
+  color: var(--wintergreen-dream);
+  padding: 10px;
+  font-size: 40px;
+}
+
+header {
+  min-height: 15%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  background-color: var(--azure-x-11-web-color);
+}
+
+li {
+  list-style: none;
+}
+
+/*start hamburger menu  */
+.bar {
+  display: block;
+  width: 40px;
+  height: 3px;
+  margin: 5px auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background-color: var(--charcoal);
+}
+.hamburger {
+  display: block;
+  margin-bottom: 20px;
+  background-color: var(--light-cyan);
+  padding: 4px;
+}
+.hamburger.active .bar:nth-child(2) {
+  opacity: 0;
+}
+.hamburger.active .bar:nth-child(1) {
+  transform: translateY(8px) rotate(45deg);
+}
+.hamburger.active .bar:nth-child(3) {
+  transform: translateY(-8px) rotate(-45deg);
+}
+/*end hamburger menu  */
+/*start navbar menu  */
+.navbar {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.nav-link {
+  color: var(--azure-x-11-web-color);
+  text-decoration: none;
+  padding: 5px;
+  font-size: 18px;
+}
+
+/*end navbar menu  */
+
+main {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: auto;
+  gap: 15px;
+}
+
+form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+h2 {
+  width: 100%;
+  font-size: 20px;
+  color: var(--mint-cream);
+  border: 2px solid var(--black-coral);
+  text-align: center;
+  background-color: var(--charcoal);
+  margin-top: 15px;
+}
+
+.input-box {
+  font-size: 20px;
+  text-align: center;
+  width: 100%;
+  border: 2px solid var(--charcoal);
+  background-color: var(--mint-cream);
+}
+#name {
+  text-align: center;
+  border: none;
+  font-size: 18px;
+}
+#address {
+  text-align: center;
+  border: none;
+  font-size: 18px;
+}
+#email {
+  text-align: center;
+  border: none;
+  font-size: 18px;
+}
+#phone-number {
+  text-align: center;
+  border: none;
+  font-size: 18px;
+}
+textarea {
+  font-size: 20px;
+  height: 300px;
+}
+button {
+  font-size: 18px;
+  background-color: var(--wintergreen-dream);
+  border: none;
+  padding: 10px 10px;
+  width: 120px;
+  color: var(--black-coral);
+  font-weight: bold;
+  margin-bottom: 50px;
+}
+/*start 3 pics with captions*/
+
+/*start footer styling*/
+footer {
+  height: 12%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--charcoal);
+  /* margin-top: 40px; */
+  padding: 20px 0;
+  gap: 8px;
+}
+.all-rights-reserved {
+  font-size: 16px;
+  color: var(--azure-x-11-web-color);
+}
+/* START Style for "font awesome" social media icons */
+.fa {
+  padding: 10px;
+  font-size: 18px;
+  width: 45px;
+  text-align: center;
+  text-decoration: none;
+  border: 3px solid var(--wintergreen-dream);
+}
+
+.fa:hover {
+  opacity: 0.7;
+}
+
+.fa-twitter {
+  background: #55acee;
+  color: white;
+}
+
+.fa-facebook {
+  background: #3b5998;
+  color: white;
+}
+
+.fa-google {
+  background: #dc4e41;
+  color: white;
+}
+
+.fa-pinterest {
+  background: #bd081c;
+  color: white;
+}
+.fa-instagram {
+  background: #3f729b;
+  color: white;
+}
+.social_media_links {
+  display: flex;
+  gap: 5px;
+}
+/*end social media icons*/
+@media (max-width: 575px) {
+  .nav-menu {
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translateX(-50%);
+    display: none;
+    gap: 0;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+    transition: 0.3s;
+  }
+  .nav-item {
+    background-color: var(--wintergreen-dream);
+    border: 1px solid var(--azure-x-11-web-color);
+    width: 100%;
+    padding: 0.8em;
+  }
+  .nav-menu.active {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    align-items: stretch;
+    z-index: 1;
+  }
+  .active-link {
+    background: var(--charcoal);
+  }
+  main {
+    z-index: -1;
+  }
+}
+/*start media query for tablet*/
+
+@media (min-width: 576px) {
+  body {
+    height: 100vh;
+  }
+  .scissors-logo {
+    width: 300px;
+    height: 150px;
+    margin-top: 15px;
+  }
+
+  h1 {
+    padding: 20px;
+    font-size: 50px;
+  }
+
+  .hamburger {
+    display: none;
+    cursor: pointer;
+  }
+
+  .navbar {
+    min-height: 70px;
+    display: flex;
+    padding: 0 24px;
+  }
+
+  .nav-link {
+    /* transition: 0.7s ease; */
+    color: var(--wintergreen-dream);
+    text-decoration: none;
+  }
+  .nav-link {
+    color: var(--wintergreen-dream);
+    text-decoration: none;
+  }
+  .nav-link:link {
+    color: var(--wintergreen-dream);
+  }
+  .nav-link:hover {
+    font-weight: bolder;
+  }
+  .nav-link:active {
+    background-color: var(--charcoal);
+  }
+  .active-link {
+    font-weight: bolder;
+    background-color: var(--charcoal);
+  }
+  .nav-menu {
+    /* position: static; */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    gap: 20px;
+  }
+
+  h2 {
+    font-size: 18px;
+    max-width: 38%;
+    margin-left: 8px;
+  }
+
+  button {
+    font-size: 14px;
+    margin-left: 8px;
+  }
+
+  footer {
+    margin-top: 0;
+  }
+}
+@media (min-width: 992px) {
+  .nav-link {
+    font-size: 22px;
+  }
+}

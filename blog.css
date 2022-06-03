@@ -195,8 +195,8 @@ footer {
 /*end social media icons*/
 @media (max-width: 575px) {
   .nav-menu {
-    position: fixed;
-    top: 31%;
+    position: absolute;
+    top: 35%;
     left: 50%;
     transform: translateX(-50%);
     display: none;
