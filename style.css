@@ -109,7 +109,7 @@ h2 {
   margin-top: 5px;
   font-size: 3vw;
   background-color: var(--mint-cream);
-  max-width: 40%;
+  max-width: 37%;
   margin-left: 5px;
   text-align: left;
   padding-left: 6px;
@@ -125,13 +125,13 @@ main > p {
 }
 
 .two {
-  max-width: 48%;
+  max-width: 46%;
 }
 .three {
-  max-width: 65%;
+  max-width: 60%;
 }
 .four {
-  max-width: 43%;
+  max-width: 38%;
 }
 button {
   font-size: 12px;
@@ -312,7 +312,7 @@ footer {
 
   h2 {
     /* font-size: 18px; */
-    max-width: 38%;
+    /* max-width: 38%; */
     margin-left: 8px;
   }
   main > p {
@@ -320,7 +320,7 @@ footer {
     margin-left: 8px;
   }
 
-  .two {
+  /* .two {
     max-width: 48%;
   }
   .three {
@@ -328,7 +328,7 @@ footer {
   }
   .four {
     max-width: 40%;
-  }
+  } */
   button {
     font-size: 14px;
     margin-left: 8px;
@@ -364,8 +364,21 @@ footer {
   }
 }
 @media (min-width: 786px) {
+  .image-links {
+    width: 90%;
+  }
+  section > p {
+    font-size: 22px;
+  }
+  button {
+    font-size: 20px;
+    max-width: 200px;
+  }
 }
 @media (min-width: 992px) {
+  .nav-link {
+    font-size: 22px;
+  }
 }
 @media (min-width: 1200px) {
 }
