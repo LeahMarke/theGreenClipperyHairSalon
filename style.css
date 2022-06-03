@@ -98,7 +98,8 @@ main {
   background-repeat: no-repeat;
   background-size: cover;
 
-  height: 300px;
+  /* height: 300px; */
+  height: auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -106,16 +107,16 @@ main {
 }
 h2 {
   margin-top: 5px;
-  font-size: 14px;
+  font-size: 3vw;
   background-color: var(--mint-cream);
-  max-width: 45%;
+  max-width: 40%;
   margin-left: 5px;
   text-align: left;
   padding-left: 6px;
   color: var(--black-coral);
 }
 main > p {
-  font-size: 14px;
+  font-size: 3vw;
   background-color: var(--charcoal);
   margin-left: 5px;
   text-align: left;
@@ -124,13 +125,13 @@ main > p {
 }
 
 .two {
-  max-width: 58%;
+  max-width: 48%;
 }
 .three {
-  max-width: 75%;
+  max-width: 65%;
 }
 .four {
-  max-width: 48%;
+  max-width: 43%;
 }
 button {
   font-size: 12px;
@@ -218,8 +219,8 @@ footer {
 /*end social media icons*/
 @media (max-width: 575px) {
   .nav-menu {
-    position: fixed;
-    top: 31%;
+    position: absolute;
+    top: 35%;
     left: 50%;
     transform: translateX(-50%);
     display: none;
@@ -264,7 +265,8 @@ footer {
     /* height: 300px; */
     /* height: 30%; */
     width: 100%;
-    height: 35%;
+    /* height: 35%; */
+    height: auto;
   }
   h1 {
     padding: 20px;
@@ -288,18 +290,16 @@ footer {
     text-decoration: none;
   }
   /* this is how I was trying to style the hover, etc. */
-  /* a.nav-link:link {
+  .nav-link:link {
     color: var(--wintergreen-dream);
   }
-  .nav-link:visited {
-    color: var(--charcoal);
-  }
-  a.nav-link:hover {
-    font-size: larger;
+
+  .nav-link:hover {
+    color: white;
   }
   .nav-link:active {
     background-color: var(--charcoal);
-  } */
+  }
   /* end trial for hover */
   .nav-menu {
     /* position: static; */
@@ -311,12 +311,12 @@ footer {
   }
 
   h2 {
-    font-size: 18px;
+    /* font-size: 18px; */
     max-width: 38%;
     margin-left: 8px;
   }
   main > p {
-    font-size: 18px;
+    /* font-size: 18px; */
     margin-left: 8px;
   }
 
@@ -362,6 +362,8 @@ footer {
   footer {
     margin-top: 0;
   }
+}
+@media (min-width: 786px) {
 }
 @media (min-width: 992px) {
 }
