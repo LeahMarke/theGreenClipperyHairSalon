@@ -256,7 +256,23 @@ footer {
     color: var(--wintergreen-dream);
     text-decoration: none;
   }
-
+  .nav-link {
+    color: var(--wintergreen-dream);
+    text-decoration: none;
+  }
+  .nav-link:link {
+    color: var(--wintergreen-dream);
+  }
+  .nav-link:hover {
+    font-weight: bolder;
+  }
+  .nav-link:active {
+    background-color: var(--charcoal);
+  }
+  .active-link {
+    font-weight: bolder;
+    background-color: var(--charcoal);
+  }
   .nav-menu {
     /* position: static; */
     display: flex;
@@ -285,7 +301,8 @@ footer {
     padding: 0 30px;
   }
 }
-/* @media (min-width: 992px) {
+@media (min-width: 992px) {
+  .nav-link {
+    font-size: 22px;
+  }
 }
-@media (min-width: 1200px) {
-} */
