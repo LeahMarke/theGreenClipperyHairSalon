@@ -149,8 +149,15 @@ textarea {
   font-size: 20px;
   height: 300px;
 }
-button {
+#results {
   font-size: 18px;
+  width: 100vw;
+  margin: 20px auto;
+  text-align: center;
+  line-height: 2;
+}
+.go-back-button {
+  font-size: 20px;
   background-color: var(--wintergreen-dream);
   border: none;
   padding: 10px 10px;
@@ -158,6 +165,8 @@ button {
   color: var(--black-coral);
   font-weight: bold;
   margin-bottom: 50px;
+  text-align: center;
+  text-decoration: none;
 }
 /*start 3 pics with captions*/
 
