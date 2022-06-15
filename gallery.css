@@ -15,6 +15,7 @@
   --bright-green: #a7c957;
   --olive-green: #6b8e23;
   --charcoal: #808080;
+  --bright-green: #62b685;
 }
 /*mobile first*/
 body {
@@ -232,15 +233,18 @@ footer {
 
   .nav-link {
     /* transition: 0.7s ease; */
-    color: var(--wintergreen-dream);
+    /* color: var(--wintergreen-dream); */
+    color: var(--bright-green);
     text-decoration: none;
   }
   .nav-link {
-    color: var(--wintergreen-dream);
+    /* color: var(--wintergreen-dream); */
+    color: var(--bright-green);
     text-decoration: none;
   }
   .nav-link:link {
-    color: var(--wintergreen-dream);
+    /* color: var(--wintergreen-dream); */
+    color: var(--bright-green);
   }
   .nav-link:hover {
     font-weight: bolder;
